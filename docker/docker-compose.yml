@@ -5,7 +5,7 @@ services:
     ports:
       - "80:80"
     volumes:
-      - ./app:/var/www/html
+      - ../app:/var/www/html
       - ./nginx/conf.d:/etc/nginx/conf.d
     depends_on:
       - php
@@ -16,7 +16,7 @@ services:
     build:
       context: ./php
     volumes:
-      - ./app:/var/www/html
+      - ../app:/var/www/html
     working_dir: /var/www/html
     environment:
       COMPOSER_ALLOW_SUPERUSER: 1
