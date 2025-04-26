@@ -1,6 +1,7 @@
 services:
   nginx:
     image: nginx:stable
+    container_name: nginx
     ports:
       - "80:80"
     volumes:
@@ -11,6 +12,7 @@ services:
       - phpmyadmin
 
   php:
+    container_name: php
     build:
       context: ./php
     volumes:
@@ -22,6 +24,7 @@ services:
   mysql:
     image: mysql:8
     platform: linux/arm64
+    container_name: mysql
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: root
