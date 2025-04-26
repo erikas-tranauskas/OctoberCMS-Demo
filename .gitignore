@@ -1,0 +1,30 @@
+# Common
+app/composer.phar
+app/.env
+app/.env.*.php
+app/.env.php
+app/auth.json
+app/php_errors.log
+app/nginx-error.log
+app/nginx-access.log
+app/nginx-ssl.access.log
+app/nginx-ssl.error.log
+app/php-errors.log
+app/sftp-config.json
+app/.ftpconfig
+app/.phpunit.result.cache
+app/nbproject
+app/selenium.php
+app/composer.lock
+app/package-lock.json
+app/node_modules
+_ide_helper.php
+.vscode/
+.phpstorm.meta.php
+.DS_Store
+.idea
+
+# Project
+app/bootstrap/compiled.php
+app/vendor
+app/modules
